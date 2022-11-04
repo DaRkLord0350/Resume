@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #9e9b9b29;
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+/* header */
+header{
+    height: 60vh;
+    opacity: 0.8;
+    background-image: url(head.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.list{
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+}
+.list li{
+    display: inline-block;
+    margin: 40px 10px 10px 10px;
+    font-weight: 100;
+    font-size: 1rem;
+}
+.list li a{
+    color: white;
+    text-decoration: none;
+}
+.list li a:hover{
+    color: aquamarine;
+    text-decoration: underline;
+}
+#name{
+    margin-top: 30vh;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.8s;
+}
+.white-color {
+    color:white;
+} 
+.black-color {
+    color:black;
+} 
+.sm{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+.sm li{
+    display: inline-block;
+    margin: 1rem;
+}
+.sm li a i{
+    box-sizing:  50%;
+}
+.sm li a i:hover{
+    color: aquamarine;
+    box-shadow:  0 0 6px 4px aquamarine;
+}
+/* about */
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9e9b9b29;
+}
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap;   use this in media query */
+}
+#dp{
+    margin-top: 1.5rem;
+}
+#a{
+    text-align: center;
+    margin: auto;
+}
+.title{
+    text-align: center;
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 400;
+}
+.title span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 0.5rem;
+}
+.title span:hover{
+    text-decoration: underline;
+}
+/* skills */
+.title{
+    margin-bottom: 30px;
+}
+.skill{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sp{
+    width: 7rem;
+    height: 1.4rem;
+    background-color: rgb(192, 173, 173);
+    border-radius: 0.8rem;
+    margin: 0 5% 5% 5%;
+}
+#ca{
+    height: inherit;
+    width: 75%;
+    align-items: flex-start;
+    background-color: #2857a4;
+    border-radius: 0.8rem;
+}
+#c{
+    height: inherit;
+    width: 80%;
+    align-items: flex-start;
+    background-color: #28a451;
+    border-radius: 0.8rem;
+}
+#h{
+    height: inherit;
+    width: 90%;
+    align-items: flex-start;
+    background-color: #8da428;
+    border-radius: 0.8rem;
+}
+#css{
+    height: inherit;
+    width: 70%;
+    align-items: flex-start;
+    background-color: #28a4a4;
+    border-radius: 0.8rem;
+}
+#js{
+    height: inherit;
+    width: 50%;
+    align-items: flex-start;
+    background-color: #a42828;
+    border-radius: 0.8rem;
+}
+#ph{
+    height: inherit;
+    width: 90%;
+    align-items: flex-start;
+    background-color: #2896a4;
+    border-radius: 0.8rem;
+}
+#f{
+    height: inherit;
+    width: 80%;
+    align-items: flex-start;
+    background-color: #a4287f;
+    border-radius: 0.8rem;
+}
+#i{
+    height: inherit;
+    width: 75%;
+    align-items: flex-start;
+    background-color: #8da428;
+    border-radius: 0.8rem;
+}
+.sname{
+    margin-left: 10px;
+    color: white;
+    font-size: 1.4rem;
+}
+/* experience */
+.container{
+    position: relative;
+    width: 75%;
+}
+.exp{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black;
+}
+.details{
+    text-align: center;
+    margin-top: -17%;
+    margin-left: 17%;
+}
+.details span{
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+}
+.details p{
+    font-size: 1rem;
+}
+.details ul{
+    margin-top: 1rem;
+}
+.details ul li{
+    font-size: 1.3rem;
+    text-align: start;
+}
+.exp::before{
+    content: '';
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-size: contain;
+    background-image: url(ieee\ logo.png);
+}
+.exp:nth-child(2n){
+    left: 53%;
+}
+.exp:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -12.6%;
+    border-radius: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    z-index: 1;
+}
+.exp:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -9.4%;
+    border-radius: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    z-index: 1;
+}
+.line{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+}
+.licon{
+    position: sticky;
+    top: 35%;
+    transform: rotate(90deg);
+}
+/* Education */
+.ed{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black;
+}
+#sch::before{
+    content: '';
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-size: contain;
+    background-image: url(unnamed.jpg);
+}
+#jee::before{
+    content: '';
+    display: inline-block;
+    height: 79px;
+    width: 173px;
+    background-size: cover;
+    background-image: url(allen_logo_kota.png);
+}
+#col::before{
+    content: '';
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-size: contain;
+    background-image: url(dgp.jpg);
+}
+.ed:nth-child(2n){
+    left: 53%;
+}
+.ed:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -12.6%;
+    border-radius: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    z-index: 1;
+}
+.ed:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -9.4%;
+    border-radius: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    z-index: 1;
+}
+/* contact */
+.black{
+    margin-top: 5rem;
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 75%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.userinfo{
+    margin: 4rem 0 0 7rem;
+}
+.sm1{
+    margin: 5%;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+.sm1 li{
+    display: inline-block;
+    margin: 1rem;
+}
+.sm1 li a i{
+    box-sizing:  50%;
+}
+.sm1 li a i:hover{
+    color: aquamarine;
+    box-shadow:  0 0 6px 4px aquamarine;
+}
